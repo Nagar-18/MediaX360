@@ -8,7 +8,7 @@ const Home = () => {
     
     <Header/>
     <div className='flex h-4/6  flex-col  w-4/5  sm:mt-32 ml-10 mr-80  mt-36 sm:mx-60 '>
-       <p className=' sm:text-5xl text-2xl gap-10  sm:mr-80 text-white'>Creating Smart And
+       <p className=' sm:text-5xl  mx-20  text-2xl gap-10  sm:mr-80 text-white'>Creating Smart And
         Engaging videos that 
       deliver the right content.</p>
         
