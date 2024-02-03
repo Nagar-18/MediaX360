@@ -8,9 +8,9 @@ import mediax from '../assets/media.png'
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'About Us', href: '/about', current: false },
-    { name: 'Services', href: '/project', current: false },
-    { name: 'Creators & Brands', href: '/invite', current: false },
-  { name: 'Work', href: '/brands', current: false },
+    { name: 'Services', href: '/service', current: false },
+    { name: 'Creators & Brands', href: '/brand', current: false },
+  { name: 'Work', href: '/work', current: false },
   // { name: 'Channels', href: '/', current: false },
 
   { name: 'ContactUs', href: '/contact', current: false },
@@ -24,23 +24,15 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header() {
+export default function Header(props) {
    const {mode,setMode} =useContext(themeContext);
- const [value,setValue]=useState("grey-900");
+
  
-const handleSubmit=()=>{
-  if(mode)
-  {
-    setValue("gray-900");
-    
-  }
-  else{
-    setValue("teal-900");
-  }
-  setMode(!mode);
-}
+ const url=window.location.pathname;
+
+console.log(url)
   return (
-    <div className={` mb-0 bg-transparent text-white`}>
+    <div className={` mb-0 bg-${url==='/'?"transparent":"black"}   bg-s z-50 text-white`}>
 
     
     <Disclosure as="nav" className={` mb-1  border-red-50`}>
@@ -54,10 +46,11 @@ const handleSubmit=()=>{
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon onClick={props.setDisplay("add")} className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon onClick={props.setDisplay("remove")}  className="block h-6 w-6" aria-hidden="true" />
                   )}
+                  
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1  items-center justify-center ">
