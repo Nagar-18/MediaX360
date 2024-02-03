@@ -1,9 +1,7 @@
 import React from 'react'
-import goal from "../assets/goal.png"
-import bulb from "../assets/bulb.png"
-import eye from "../assets/eye.png"
-import video from "../assets/video.jpeg"
-import animate from "../assets/animate.jpeg"
+import v0 from "../assets/stretagic.mp4"
+import v1 from "../assets/vproduction.mp4"
+import v2 from "../assets/animation.mp4"
 import Header from './Header'
 const Service = () => {
    const url=window.location.pathname
@@ -17,9 +15,13 @@ const Service = () => {
       <div className='flex flex-col text-[#fff]  align-middle  sm:flex-row justify-evenly w-screen'>
 
       <div className='max-w-sm m-auto h-80 my-3  w-64 sm:w-80  border-2 hover:border-[#b750f6ef]  border-black  rounded-lg bg-gradient-to-tr from-slate-600 to-blue-300 p-0.5 shadow-lg'>
-    <a><img className="rounded-t-lg w-full  h-1/2" src={goal}  />
-        
-    </a>
+   
+       <video src={v0}
+            
+            autoplay="{true}" loop muted 
+            className=" z-20 top-0  w-full  h-1/2  overflow-hidden object-fill  
+            bg-blend-darken "> 
+        </video> 
     <div className="p-6 ">
         <a href="#">
             <h5 className='mb-2 text-1xl font-bold tracking-tight text-slate-900 '>Strategy Development</h5>
@@ -37,9 +39,12 @@ const Service = () => {
 
 
 <div className='max-w-sm m-auto h-80 my-3 w-64  sm:w-80  border-2 hover:border-[#29e4e1] border-black rounded-lg bg-gradient-to-tr from-slate-600 to-blue-300 p-0.5 shadow-lg'>
-    <a><img className="rounded-t-lg w-full  h-1/2" src={video}  />
-        
-    </a>
+     <video src={v1}
+            
+            autoplay="{true}" loop muted 
+            className=" z-20 top-0  w-full  h-1/2  overflow-hidden object-fill  
+            bg-blend-darken "> 
+        </video> 
     <div className="p-6">
         <a href="#">
             <h5 className='mb-2 text-1xl font-bold tracking-tight text-slate-900'>Video Production</h5>
@@ -63,9 +68,12 @@ Shorts
 </div>
 
 <div className='max-w-sm m-auto  h-80  my-3 w-64 sm:w-80    border-2 hover:border-red-600  border-black  rounded-lg bg-gradient-to-tr from-slate-600 to-blue-300 p-0.5 shadow-lg'>
-    <a><img className="rounded-t-lg w-full object-cover  h-1/2" src={animate}  />
-        
-    </a>
+    <video src={v2}
+            
+            autoplay="{true}" loop muted 
+            className=" z-20 top-0  w-full  h-1/2  overflow-hidden object-fill  
+            bg-blend-darken "> 
+        </video> 
     <div className="p-6">
         <a href="#">
             <h5 className='mb-2 text-1xl font-bold tracking-tight text-slate-900'>Animation</h5>
