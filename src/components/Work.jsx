@@ -1,7 +1,7 @@
 import React from 'react'
 import goal from "../assets/goal.png"
 
-import video from "../assets/video.jpeg"
+import creator2 from "../assets/c2.jpg"
 import creator from "../assets/creator.jpg"
 import Header from './Header'
 const Work = () => {
@@ -31,15 +31,16 @@ const Work = () => {
 
 
 
-<div className='max-w-sm m-auto h-80 my-3  w-11/12 sm:w-1/2 border-2 hover:border-[#29e4e1] border-black rounded-lg bg-gradient-to-tr from-rose-300 to-blue-300 p-0.5 shadow-lg'>
-    <a><img className="rounded-t-lg w-full  h-4/5" src={video}  />
+   <div className='max-w-sm m-auto h-80 my-3  w-11/12 sm:w-1/2  border-2 hover:border-[#b750f6ef]  border-black  rounded-lg bg-gradient-to-tr from-rose-300 to-blue-300 p-0.5 shadow-lg'>
+    <div className='flex justify-center a'><img className="rounded-t-lg  w-1/5 h-1/5" src={creator2}  />
         
-    </a>
-    <div className="p-6">
+    </div>
+    <div className="p-6 ">
         <a href="#">
-            <h5 className='mb-2 text-2xl font-semibold tracking-tight text-slate-900'> Here Our Recent Work </h5>
+            <h5 className='mb-2  font-semibold tracking-tight text-slate-900 '>Elevate your brand with captivating ad content crafted by our team. We specialize in strategic influencer collaborations to amplify your brand's presence and foster exponential growth. Let us tell your story and connect with audiences in a meaningful way!</h5>
         </a>
- 
+         
+        
         
     </div>
 </div>
