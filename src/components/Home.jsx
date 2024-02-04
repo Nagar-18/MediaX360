@@ -12,6 +12,7 @@ import { useState } from 'react'
 import Clients from './Clients'
 import Past1 from './Past1'
 import Past2 from './Past2'
+import {Link} from 'react-router-dom'
 const Home = () => {
 
   const [display,setDisplay] =useState("add");
@@ -38,11 +39,11 @@ const Home = () => {
 
     </div>
     <div  className='flex w-full sm:justify-end justify-center mt-5  sm:-ml-20 z-20 '>  <a target='_blank' href="#" className="inline-flex items-center justify-center px-2 mx-2 py-2 text-sm font-medium text-center text-white  rounded-lg  border-2 border-cyan-400 hover:bg-pink-500">
-         View Our Work  <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+         <Link to={"/work"}>View Our Work</Link>  <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg></a>
             <a target='_blank' href="#" className="inline-flex items-center justify-center px-2 mx-2 py-2 text-sm font-medium text-center text-white  rounded-lg  border-2 border-cyan-400 hover:bg-pink-500">
-         Enqiurey Box <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+         <Link to={"/contact"}>Eniqurey Box</Link> <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg></a></div> 
             

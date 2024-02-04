@@ -11,13 +11,13 @@ const items=[
     imgsrc:ns,
     insta:"https://www.instagram.com/thelost_trader?igsh=MWRsdTQ4cWlncHhhaA==",
     name:"Nishant Shrivastava",
-    about:""
+    about:"Passionate creator explors the intersections of trading, business and self-growth."
   },
     {
     imgsrc:hb,
     insta:"https://www.instagram.com/thelost_trader?igsh=MWRsdTQ4cWlncHhhaA==",
     name:"Harsh Baghel",
-    about:""
+    about:"Passionate content creator exploring the intricacies of finance and business ."
   }
 ]
 const Brands = () => {

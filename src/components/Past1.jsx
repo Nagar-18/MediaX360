@@ -9,7 +9,7 @@ const Past1 = () => {
         {/* 
         <div ><img className='h-80' src={animate} alt="" /></div> */}
          <div className='text-2xl  w-44  mx-auto text-black '>TULLY & DRIVE MARKETING VIDEO</div>
-          <div  className=' w-44  text-black mx-auto  mb-5 mt-10 sm:mb-3'>Present a short synopsis of your sample work here. Narrate it in a way that keeps the viewer wanting to know more.
+          <div  className=' w-44  text-black mx-auto  mb-5 mt-10 sm:mb-3'>Here is our short synopsis where we are creating your work in fast and efficient way in the term of saving money and time mediaX360 is best website.
 
 
              </div> 

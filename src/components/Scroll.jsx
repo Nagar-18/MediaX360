@@ -27,9 +27,10 @@ const Scroll = ({ items }) => {
         onScroll={() => console.log('scrolling')}
       >
         {items&&items.map((item, index) => (
-          <div key={index} class="relative flex flex-col text-gray-700 bg-[#c889c977] shadow-md bg-clip-border rounded-xl h-72 w-72">
-  <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-60">
+          <div key={index} class="relative flex flex-col text-[#080808] bg-[#5a818888] shadow-md bg-clip-border rounded-xl h-72 w-72">
+  <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-slate-400 shadow-lg bg-clip-border rounded-xl h-60">
      <img className='bg-cover ' src={item.imgsrc} alt="profile-picture" />
+     <p className='m-1'>{item.about}</p>
   </div>
   <div class="p-2 text-center">
     <h4 class="block mb-2 font-sans text-1xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">

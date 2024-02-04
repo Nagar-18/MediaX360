@@ -8,7 +8,7 @@ const Past2 = () => {
      <div className='m-5 h-96 w-1/2 flex flex-col justify-center align-middle self-center  '>
       
          <div className='text-2xl  w-44  mx-auto text-black '>STIPPLE UNLIMITED STRATEGY AND PRODUCTION</div>
-          <div  className=' w-44  text-black mx-auto  mb-5 mt-10 sm:mb-3'>Present a short synopsis of your sample work here. Narrate it in a way that keeps the viewer wanting to know more.
+          <div  className=' w-44  text-black mx-auto  mb-5 mt-10 sm:mb-3'> We present a short synopsis of your  work And we Narrate it in a way that keeps the viewer wanting to know more.
 
 
              </div> 
